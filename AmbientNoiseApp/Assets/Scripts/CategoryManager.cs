@@ -48,7 +48,10 @@ public class CategoryManager : MonoBehaviour {
         //Spawns the selected Audio Object via the button in the menu at the position of the mouse/menu
         //and afterwards plays the Menu-close animation, and disables the menu.
         Debug.Log("Clicked audio button");
-        Instantiate(audioObject, this.gameObject.transform);
+        Debug.Log("MENU pos = " + this.gameObject.transform.position);
+        Debug.Log("BUTTON pos = " + Input.mousePosition);
+        Vector3 newPos = new Vector3(Input.mousePosition.x - 350, Input.mousePosition.y - 150, Input.mousePosition.z);
+        Instantiate(audioObject, newPos, Quaternion.identity);
         GameObject.FindGameObjectWithTag("Menu").SetActive(false);
     }
 

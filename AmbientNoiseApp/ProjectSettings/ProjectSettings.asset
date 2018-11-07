@@ -265,7 +265,7 @@ PlayerSettings:
     - WindowsMR
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Metro
-    m_Enabled: 0
+    m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
   m_TemplateCustomTags: {}
@@ -587,11 +587,13 @@ PlayerSettings:
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:
-      HumanInterfaceDevice: False
+      HumanInterfaceDevice: True
       InternetClient: False
       InternetClientServer: False
+      Microphone: True
       PrivateNetworkClientServer: False
       SpatialPerception: True
+      WebCam: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
