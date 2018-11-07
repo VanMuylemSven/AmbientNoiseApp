@@ -19,9 +19,8 @@ public class CategoryManager : MonoBehaviour {
         SetCategory();
         SetTitle();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update () {
     }
 
     //Next or prev button gets called
@@ -44,6 +43,20 @@ public class CategoryManager : MonoBehaviour {
         SetTitle();
     }
 
+    public void SpawnAudioObject(GameObject audioObject)
+    {
+        //Spawns the selected Audio Object via the button in the menu at the position of the mouse/menu
+        //and afterwards plays the Menu-close animation, and disables the menu.
+        Debug.Log("Clicked audio button");
+        Instantiate(audioObject, this.gameObject.transform);
+        GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+    }
+
+    // ===========
+    // Private methods
+    // ===========
+
+    //Update category items in the Menu
     private void SetCategory()
     {
         //Debug.Log("currentcat = " + _currentCategory);
@@ -62,12 +75,13 @@ public class CategoryManager : MonoBehaviour {
             }
         }
     }
+    //Update the category title text
     private void SetTitle()
     {
         TitleObject.GetComponent<Text>().text = CategoryTitles[_currentCategory];
     }
 
-
+    //Called everytime object becomes active
     private void OnEnable()
     {
         //On activate, perform the animation
