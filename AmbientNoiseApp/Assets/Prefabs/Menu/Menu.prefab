@@ -786,6 +786,7 @@ GameObject:
   - component: {fileID: 114622928248021986}
   - component: {fileID: 114302584241046228}
   - component: {fileID: 114923198111366832}
+  - component: {fileID: 114265966024138616}
   m_Layer: 5
   m_Name: Item_Container_CATEGORY3
   m_TagString: Untagged
@@ -995,6 +996,7 @@ GameObject:
   - component: {fileID: 114265785236567368}
   - component: {fileID: 114698027968187848}
   - component: {fileID: 114200564334537222}
+  - component: {fileID: 114979070205318738}
   m_Layer: 5
   m_Name: Item_Container_Rain
   m_TagString: Untagged
@@ -1204,6 +1206,7 @@ GameObject:
   - component: {fileID: 114592515122157020}
   - component: {fileID: 114128584759075472}
   - component: {fileID: 114242452850676958}
+  - component: {fileID: 114807165597929640}
   m_Layer: 5
   m_Name: Item_Container_CATEGORY2
   m_TagString: Untagged
@@ -2323,6 +2326,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114265966024138616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1415821271737360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aebab3047f2113489ca3eb8423228b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 223982087666314944}
 --- !u!114 &114270263111142500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4412,6 +4427,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114807165597929640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1784209064255488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aebab3047f2113489ca3eb8423228b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 223411142342554520}
 --- !u!114 &114814611787423910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5075,6 +5102,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114979070205318738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641980123691622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aebab3047f2113489ca3eb8423228b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 223958557776544970}
 --- !u!222 &222006299780955444
 CanvasRenderer:
   m_ObjectHideFlags: 1

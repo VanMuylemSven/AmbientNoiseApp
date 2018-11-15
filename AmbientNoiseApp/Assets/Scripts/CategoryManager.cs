@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using HoloToolkit.Unity.SpatialMapping;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,9 @@ public class CategoryManager : MonoBehaviour {
     public GameObject TitleObject;
     public string[] CategoryTitles = new string[3] { "rain", "", "" };
     public GameObject[] Categories;
+
+    public enum ROOMSIZE { Small, Medium, Large, None };
+    public ROOMSIZE room = ROOMSIZE.Small;
 
     private int _currentCategory = 0;
 
@@ -50,9 +54,32 @@ public class CategoryManager : MonoBehaviour {
         Debug.Log("Clicked audio button");
         Debug.Log("MENU pos = " + this.gameObject.transform.position);
         Debug.Log("BUTTON pos = " + Input.mousePosition);
-        Vector3 newPos = new Vector3(Input.mousePosition.x - 350, Input.mousePosition.y - 150, Input.mousePosition.z);
+
+        Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
+
         Instantiate(audioObject, newPos, Quaternion.identity);
         GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+
+        //set audioObject settings
+        AudioSource attachedAudio = audioObject.GetComponentInChildren<AudioSource>();
+        attachedAudio.spatialize = true;
+        attachedAudio.spread = 0;
+        //spatialBlend allows to hear spatialized sounds
+        attachedAudio.spatialBlend = 1;
+        //optional: set space size, see enum ROOMSIZES
+        //attachedAudio.SetSpatializerFloat(1, (float)room);
+
+        //search for present TapToPlace component
+        if(!audioObject.GetComponent<TapToPlace>())
+        {
+            audioObject.AddComponent<TapToPlace>();
+        }
+        TapToPlace tapToPlace = audioObject.GetComponent<TapToPlace>();
+        //set needed properties 
+        tapToPlace.IsBeingPlaced = true;
+        tapToPlace.AllowMeshVisualizationControl = true;
+
+
     }
 
     // ===========
