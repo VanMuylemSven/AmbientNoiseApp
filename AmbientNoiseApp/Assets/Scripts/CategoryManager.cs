@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class CategoryManager : MonoBehaviour {
 
+
     /*public enum Direction { Next, Previous };
     public Direction direction;*/
     public GameObject TitleObject;
@@ -16,6 +17,13 @@ public class CategoryManager : MonoBehaviour {
     public ROOMSIZE room = ROOMSIZE.Small;
 
     private int _currentCategory = 0;
+    public enum Category
+    {
+        Beach,
+        City,
+        Desert,
+        Forest
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -46,6 +54,29 @@ public class CategoryManager : MonoBehaviour {
         SetCategory();
         SetTitle();
     }
+    public void SwitchToCategory(int categoryNumber/*Category category*/)
+    {
+        /*if(category == Category.Beach)
+        {
+            _currentCategory = 0;
+        }
+        else if (category == Category.City)
+        {
+            _currentCategory = 1;
+        }
+        else if (category == Category.Desert)
+        {
+            _currentCategory = 2;
+        }
+        else if (category == Category.Forest)
+        {
+            _currentCategory = 3;
+        }*/
+        _currentCategory = categoryNumber;
+        SetCategory();
+        SetTitle();
+    }
+
 
     public void SpawnAudioObject(GameObject audioObject)
     {
