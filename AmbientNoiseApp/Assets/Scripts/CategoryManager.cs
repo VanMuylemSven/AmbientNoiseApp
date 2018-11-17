@@ -10,8 +10,10 @@ public class CategoryManager : MonoBehaviour {
     /*public enum Direction { Next, Previous };
     public Direction direction;*/
     public GameObject TitleObject;
-    public string[] CategoryTitles = new string[3] { "rain", "", "" };
     public GameObject[] Categories;
+    public GameObject CategoryContainer;
+    public string[] CategoryTitles = new string[4] { "Beach", "City", "Desert", "Forest" };
+
 
     public enum ROOMSIZE { Small, Medium, Large, None };
     public ROOMSIZE room = ROOMSIZE.Small;
@@ -30,7 +32,9 @@ public class CategoryManager : MonoBehaviour {
         //Set category at start to prevent Active/inactive issues
         SetCategory();
         SetTitle();
-	}
+        SetGrayScaleCategories();
+
+    }
     // Update is called once per frame
     void Update () {
     }
@@ -44,6 +48,7 @@ public class CategoryManager : MonoBehaviour {
         //Debug.Log("++ = " + _currentCategory);
         SetCategory();
         SetTitle();
+        SetGrayScaleCategories();
     }
     public void SwitchPreviousCategory()
     {
@@ -53,6 +58,7 @@ public class CategoryManager : MonoBehaviour {
         //Debug.Log("-- = " + _currentCategory);
         SetCategory();
         SetTitle();
+        SetGrayScaleCategories();
     }
     public void SwitchToCategory(int categoryNumber/*Category category*/)
     {
@@ -75,6 +81,7 @@ public class CategoryManager : MonoBehaviour {
         _currentCategory = categoryNumber;
         SetCategory();
         SetTitle();
+        SetGrayScaleCategories();
     }
 
 
@@ -116,7 +123,6 @@ public class CategoryManager : MonoBehaviour {
     // ===========
     // Private methods
     // ===========
-
     //Update category items in the Menu
     private void SetCategory()
     {
@@ -151,5 +157,29 @@ public class CategoryManager : MonoBehaviour {
     private void OnDisable()
     {
         //Perform the animation, then disable
+    }
+
+
+    /* GRAYSCALING */
+    public void SetGrayScaleCategories()
+    {
+        //Nonselected categories get gray color overlayed, selected one gets full color
+        //Gets all child buttons
+        Color grayCol = new Color(0.3f, 0.3f, 0.3f);
+        int iterator = 0;
+        foreach (Transform cat in CategoryContainer.transform)
+        {
+            //Debug.Log(cat);
+            if(_currentCategory == iterator)
+            {
+                cat.GetComponent<Image>().color = new Color(1.0f, 1.0f, 1.0f);
+            }
+            else
+            {
+                cat.GetComponent<Image>().color = grayCol;
+            }
+            iterator++;
+
+        }
     }
 }
