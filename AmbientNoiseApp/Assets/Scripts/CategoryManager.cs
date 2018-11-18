@@ -96,7 +96,7 @@ public class CategoryManager : MonoBehaviour {
         Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
 
         Instantiate(audioObject, newPos, Quaternion.identity);
-        GameObject.FindGameObjectWithTag("Menu").SetActive(false);
+        //GameObject.FindGameObjectWithTag("Menu").SetActive(false);
 
         //set audioObject settings
         AudioSource attachedAudio = audioObject.GetComponentInChildren<AudioSource>();
