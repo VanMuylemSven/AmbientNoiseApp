@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 114041921779188276}
   - component: {fileID: 114530380681514762}
   - component: {fileID: 114332509600117484}
+  - component: {fileID: 114701726242942730}
   m_Layer: 5
   m_Name: Canvas_Rain_3DSlider
   m_TagString: Untagged
@@ -479,6 +480,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114701726242942730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1820801627313674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Canvas: {fileID: 223728293714033644}
 --- !u!114 &114711838791029390
 MonoBehaviour:
   m_ObjectHideFlags: 1
