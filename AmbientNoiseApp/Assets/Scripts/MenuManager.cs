@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using HoloToolkit.Unity.SpatialMapping;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,15 +14,11 @@ public class MenuManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("z"))
+        if(MenuObject.GetComponent<TapToPlaceOnce>().IsBeingPlaced == false)
         {
-            //Menu
-            MenuObject.gameObject.SetActive(false);
-        }
-        if (Input.GetKeyDown("e"))
-        {
-            //Menu
-            MenuObject.gameObject.SetActive(true);
+            MenuObject.transform.LookAt(Camera.main.transform);
+            var rotation = new Vector3(Camera.main.transform.eulerAngles.x, Camera.main.transform.eulerAngles.y + 180.0f, Camera.main.transform.eulerAngles.z);
+            MenuObject.transform.Rotate(rotation);
         }
     }
 }

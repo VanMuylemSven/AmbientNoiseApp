@@ -96,7 +96,6 @@ public class CategoryManager : MonoBehaviour {
         Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
 
         Instantiate(audioObject, newPos, Quaternion.identity);
-        //GameObject.FindGameObjectWithTag("Menu").SetActive(false);
 
         //set audioObject settings
         AudioSource attachedAudio = audioObject.GetComponentInChildren<AudioSource>();
@@ -117,7 +116,12 @@ public class CategoryManager : MonoBehaviour {
         tapToPlace.IsBeingPlaced = true;
         tapToPlace.AllowMeshVisualizationControl = true;
 
-
+        if (GameObject.FindGameObjectWithTag("Menu").GetComponent<TapToPlace>() == true)
+        {
+            //GameObject.FindGameObjectWithTag("Menu").GetComponent<TapToPlace>().enabled = false;
+            //GameObject.FindGameObjectWithTag("Menu").GetComponentInChildren<TapToPlace>().enabled = true;
+            //Destroy(GameObject.FindGameObjectWithTag("Menu").GetComponent<TapToPlace>());
+        }
     }
 
     // ===========
