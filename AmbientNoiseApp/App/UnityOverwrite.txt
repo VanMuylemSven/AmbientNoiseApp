@@ -5,9 +5,9 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-AmbientNoiseApp.sln: E9CD9C5BB63C9D911FEFC750930930E1
-AmbientNoiseApp\AmbientNoiseApp.csproj: ED2D6006CFA5D1F07C9E6077311766B5
-AmbientNoiseApp\AmbientNoiseApp.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+AmbientNoiseApp.sln: modified
+AmbientNoiseApp\AmbientNoiseApp.csproj: 594809C559D6F6E5101D8B1783A44E9C
+AmbientNoiseApp\AmbientNoiseApp.csproj.user: modified
 AmbientNoiseApp\App.cs: 19248CC09877291B5ABA0B94DEF7776F
 AmbientNoiseApp\Package.appxmanifest: 3CFFCDEC19D0B1DFB214F200920DF909
 AmbientNoiseApp\project.json: 1D02BC64BAC0D041019673A1C4C51737
@@ -17,5 +17,13 @@ AmbientNoiseApp\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D56495
 AmbientNoiseApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 AmbientNoiseApp\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 AmbientNoiseApp\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+AmbientNoiseApp\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+AmbientNoiseApp\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
+AmbientNoiseApp\obj\x86\Release\AmbientNoiseApp.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 AmbientNoiseApp\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
