@@ -1917,6 +1917,16 @@
             "rid": "win8-aot"
           }
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-arm": {
@@ -3692,6 +3702,16 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-arm-aot": {
@@ -5429,6 +5449,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
         }
       }
     },
@@ -7212,6 +7242,16 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-x64-aot": {
@@ -8949,6 +8989,16 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
         }
       }
     },
@@ -10732,6 +10782,16 @@
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     },
     "UAP,Version=v10.0.10240/win10-x86-aot": {
@@ -12470,6 +12530,16 @@
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+        }
       }
     }
   },
@@ -14190,10 +14260,11 @@
       ]
     },
     "System.Net.Http/4.0.0": {
-      "sha512": "mZuAl7jw/mFY8jUq4ITKECxVBh9a8SJt9BC/+lJbmo7cRKspxE3PsITz+KiaCEsexN5WYPzwBOx0oJH/0HlPyQ==",
+      "sha512": "RufQzPFmwqt1jsD6LR+TuAQJckoW8nDgKHuNZh5eZPA62BVpU58mjKrUkk8lR0tYb6T6yLC9f+b+GGI5gnOjBA==",
       "type": "package",
       "path": "system.net.http/4.0.0",
       "files": [
+        ".signature.p7s",
         "lib/DNXCore50/System.Net.Http.dll",
         "lib/net45/_._",
         "lib/netcore50/System.Net.Http.dll",
@@ -15870,6 +15941,11 @@
         "system.xml.xmlserializer.4.0.10.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Assembly-CSharp/1.0.0": {
+      "type": "project",
+      "path": "../GeneratedProjects/UWP/Assembly-CSharp/project.json",
+      "msbuildProject": "../GeneratedProjects/UWP/Assembly-CSharp/Assembly-CSharp.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -15882,24 +15958,34 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Sven\\.nuget\\packages\\": {}
+    "C:\\Users\\Kenzo\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Source\\Unity\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\AmbientNoiseApp.csproj",
+      "projectUniqueName": "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\AmbientNoiseApp.csproj",
       "projectName": "AmbientNoiseApp",
-      "projectPath": "C:\\Source\\Unity\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\AmbientNoiseApp.csproj",
-      "projectJsonPath": "C:\\Source\\Unity\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\project.json",
-      "packagesPath": "C:\\Users\\Sven\\.nuget\\packages\\",
-      "outputPath": "C:\\Source\\Unity\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\obj\\",
+      "projectPath": "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\AmbientNoiseApp.csproj",
+      "projectJsonPath": "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\project.json",
+      "packagesPath": "C:\\Users\\Kenzo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\AmbientNoiseApp\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\Sven\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kenzo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+      },
+      "frameworks": {
+        "uap10.0.10240": {
+          "projectReferences": {
+            "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\Kenzo\\Documents\\Unity Projects\\AmbientNoiseApp\\AmbientNoiseApp\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            }
+          }
+        }
       }
     },
     "dependencies": {
