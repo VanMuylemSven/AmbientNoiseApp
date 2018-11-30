@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 65358934912978858}
   - component: {fileID: 114500421008527206}
   - component: {fileID: 114166068942093534}
+  - component: {fileID: 114590507054715944}
   m_Layer: 0
   m_Name: Audio_Object_Rain 1
   m_TagString: Untagged
@@ -465,6 +466,24 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114590507054715944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319713507790034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f407a80f7db5a7c46a3c5f4396f81fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultGazeDistance: 2
+  PlaceParentOnTap: 0
+  ParentGameObjectToPlace: {fileID: 0}
+  IsBeingPlaced: 1
+  AllowMeshVisualizationControl: 1
+  UseColliderCenter: 0
+  HasBeenPlaced: 0
 --- !u!114 &114607511953189066
 MonoBehaviour:
   m_ObjectHideFlags: 1

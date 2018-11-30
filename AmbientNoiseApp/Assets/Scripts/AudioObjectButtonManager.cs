@@ -6,6 +6,7 @@ using UnityEngine;
 public class AudioObjectButtonManager : MonoBehaviour {
 
     public GameObject buttons;
+    public GameObject[] ButtonObjects = new GameObject[3];
     public GameObject slider;
     public GameObject audioObject;
 
@@ -26,6 +27,11 @@ public class AudioObjectButtonManager : MonoBehaviour {
         if(buttons.activeSelf == true)
         {
             buttons.SetActive(false);
+            //Also deactivate and reset buttons + slider
+            ButtonObjects[0].gameObject.transform.localPosition = new Vector3(-50f, -40f);
+            ButtonObjects[1].gameObject.transform.localPosition = new Vector3(0f, -40f);
+            ButtonObjects[2].gameObject.transform.localPosition = new Vector3(50f, -40f);
+            slider.SetActive(false);
         }
         else
         {
@@ -50,19 +56,25 @@ public class AudioObjectButtonManager : MonoBehaviour {
     // delete object
     public void DeleteAudioObject()
     {
-        Destroy(audioObject);
+        Destroy(this.gameObject);
     }
 
     // toggle volume slider
     public void ToggleSlider()
     {
-        Debug.Log("TOGGLED");
+        Debug.Log("Toggled Slider");
         if (slider.activeSelf == true)
         {
+            ButtonObjects[0].gameObject.transform.localPosition = new Vector3(-50f, -40f);
+            ButtonObjects[1].gameObject.transform.localPosition = new Vector3(0f, -40f);
+            ButtonObjects[2].gameObject.transform.localPosition = new Vector3(50f, -40f);
             slider.SetActive(false);
         }
         else
         {
+            ButtonObjects[0].gameObject.transform.localPosition = new Vector3(40f, -40f);
+            ButtonObjects[1].gameObject.transform.localPosition = new Vector3(40f, -70f);
+            ButtonObjects[2].gameObject.transform.localPosition = new Vector3(40f, -100f);
             slider.SetActive(true);
         }
 
