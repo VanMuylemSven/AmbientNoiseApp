@@ -9,10 +9,10 @@ public class CategoryManager : MonoBehaviour {
 
     /*public enum Direction { Next, Previous };
     public Direction direction;*/
-    public GameObject TitleObject;
+    //public GameObject TitleObject;
     public GameObject[] Categories;
     public GameObject CategoryContainer;
-    public string[] CategoryTitles = new string[4] { "Beach", "City", "Desert", "Forest" };
+    //public string[] CategoryTitles = new string[4] { "Beach", "City", "Desert", "Forest" };
 
 
     public enum ROOMSIZE { Small, Medium, Large, None };
@@ -31,7 +31,7 @@ public class CategoryManager : MonoBehaviour {
 	void Start () {
         //Set category at start to prevent Active/inactive issues
         SetCategory();
-        SetTitle();
+        //SetTitle();
         SetGrayScaleCategories();
 
     }
@@ -47,7 +47,7 @@ public class CategoryManager : MonoBehaviour {
             _currentCategory = 0;
         //Debug.Log("++ = " + _currentCategory);
         SetCategory();
-        SetTitle();
+        //SetTitle();
         SetGrayScaleCategories();
     }
     public void SwitchPreviousCategory()
@@ -57,7 +57,7 @@ public class CategoryManager : MonoBehaviour {
             _currentCategory = Categories.Length - 1;
         //Debug.Log("-- = " + _currentCategory);
         SetCategory();
-        SetTitle();
+        //SetTitle();
         SetGrayScaleCategories();
     }
     public void SwitchToCategory(int categoryNumber/*Category category*/)
@@ -80,7 +80,7 @@ public class CategoryManager : MonoBehaviour {
         }*/
         _currentCategory = categoryNumber;
         SetCategory();
-        SetTitle();
+        //SetTitle();
         SetGrayScaleCategories();
     }
 
@@ -147,10 +147,10 @@ public class CategoryManager : MonoBehaviour {
         }
     }
     //Update the category title text
-    private void SetTitle()
+    /*private void SetTitle()
     {
         TitleObject.GetComponent<Text>().text = CategoryTitles[_currentCategory];
-    }
+    }*/
 
     //Called everytime object becomes active
     private void OnEnable()
