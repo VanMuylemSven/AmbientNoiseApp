@@ -107,14 +107,15 @@ public class CategoryManager : MonoBehaviour {
         //attachedAudio.SetSpatializerFloat(1, (float)room);
 
         //search for present TapToPlace component
-        if(!audioObject.GetComponent<TapToPlace>())
+        if(!audioObject.GetComponent<TapToPlaceOnce>())
         {
-            audioObject.AddComponent<TapToPlace>();
+            audioObject.AddComponent<TapToPlaceOnce>();
         }
-        TapToPlace tapToPlace = audioObject.GetComponent<TapToPlace>();
+        TapToPlaceOnce tapToPlace = audioObject.GetComponent<TapToPlaceOnce>();
         //set needed properties 
         tapToPlace.IsBeingPlaced = true;
         tapToPlace.AllowMeshVisualizationControl = true;
+        tapToPlace.HasBeenPlaced = false;
 
         if (GameObject.FindGameObjectWithTag("Menu").GetComponent<TapToPlace>() == true)
         {

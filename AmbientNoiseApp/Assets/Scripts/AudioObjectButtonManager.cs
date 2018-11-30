@@ -37,12 +37,11 @@ public class AudioObjectButtonManager : MonoBehaviour {
     public void MoveAudioObject()
     {
         Debug.Log("clicked moveAudioObject");
-        //search for present TapToPlace component
-        if (!audioObject.GetComponent<TapToPlaceOnce>())
-        {
-            audioObject.AddComponent<TapToPlaceOnce>();
-        }
+
         TapToPlaceOnce tapToPlace = audioObject.GetComponent<TapToPlaceOnce>();
+        //find volumeSlider
+        slider.SetActive(false);
+
         //set needed properties 
         tapToPlace.HasBeenPlaced = false;
         tapToPlace.IsBeingPlaced = true;
