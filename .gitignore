@@ -34,7 +34,3 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-
-*/Assets/HoloToolkit/*.*
-**Assets/HoloToolkit/
-**Assets/HoloToolkit/*
