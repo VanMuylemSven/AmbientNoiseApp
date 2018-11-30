@@ -12,7 +12,7 @@ public class AudioObjectButtonManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         ToggleButtons();
-        ToggleSlider();
+        //ToggleSlider();
     }
 	
 	// Update is called once per frame
@@ -56,6 +56,7 @@ public class AudioObjectButtonManager : MonoBehaviour {
     // toggle volume slider
     public void ToggleSlider()
     {
+        Debug.Log("TOGGLED");
         if (slider.activeSelf == true)
         {
             slider.SetActive(false);
