@@ -1422,7 +1422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: 35}
+  m_AnchoredPosition: {x: -25, y: -10.199997}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546236251
@@ -1935,20 +1935,30 @@ Prefab:
     - target: {fileID: 224926842187205956, guid: ac68adcad9b080c46834878a72812eb2,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224605155696810314, guid: ac68adcad9b080c46834878a72812eb2,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1848978573973606, guid: ac68adcad9b080c46834878a72812eb2, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1679255229220714, guid: ac68adcad9b080c46834878a72812eb2, type: 2}
       propertyPath: m_Name
       value: Canvas_Rain
+      objectReference: {fileID: 0}
+    - target: {fileID: 224337746754613710, guid: ac68adcad9b080c46834878a72812eb2,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -86.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82261477485785512, guid: ac68adcad9b080c46834878a72812eb2,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac68adcad9b080c46834878a72812eb2, type: 2}
@@ -1969,6 +1979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83cb76c6d2a2b3f4ab466f5a8b6de95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DeleteButton: {fileID: 2073005800}
+  ToggleSliderButton: {fileID: 546236249}
 --- !u!1001 &1713886756
 Prefab:
   m_ObjectHideFlags: 0
@@ -2196,7 +2208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.8, y: 35}
+  m_AnchoredPosition: {x: 25, y: -10.199997}
   m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073005802
