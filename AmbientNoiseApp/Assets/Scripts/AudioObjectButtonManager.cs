@@ -36,15 +36,16 @@ public class AudioObjectButtonManager : MonoBehaviour {
     // move object, doesn't work
     public void MoveAudioObject()
     {
+        Debug.Log("clicked moveAudioObject");
         //search for present TapToPlace component
-        if (!audioObject.GetComponent<TapToPlace>())
+        if (!audioObject.GetComponent<TapToPlaceOnce>())
         {
-            audioObject.AddComponent<TapToPlace>();
+            audioObject.AddComponent<TapToPlaceOnce>();
         }
-        TapToPlace tapToPlace = audioObject.GetComponent<TapToPlace>();
+        TapToPlaceOnce tapToPlace = audioObject.GetComponent<TapToPlaceOnce>();
         //set needed properties 
+        tapToPlace.HasBeenPlaced = false;
         tapToPlace.IsBeingPlaced = true;
-        tapToPlace.AllowMeshVisualizationControl = true;
     }
 
     // delete object
