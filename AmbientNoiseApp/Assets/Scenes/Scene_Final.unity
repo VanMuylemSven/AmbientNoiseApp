@@ -2073,6 +2073,31 @@ Prefab:
       value: 
       objectReference: {fileID: 1773677217592262, guid: dc401f2efc8dd234caeb818d447a7ee9,
         type: 2}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 817.22064
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 483.9482
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 219.32243
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 390.76254
+      objectReference: {fileID: 0}
+    - target: {fileID: 114574425945839806, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: UseColliderCenter
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3daf336c815d924dabf4b7d2c68c52b, type: 2}
   m_IsPrefabParent: 0

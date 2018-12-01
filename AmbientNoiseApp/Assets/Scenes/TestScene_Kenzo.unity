@@ -1411,7 +1411,7 @@ Prefab:
     - target: {fileID: 114574425945839806, guid: f3daf336c815d924dabf4b7d2c68c52b,
         type: 2}
       propertyPath: UseColliderCenter
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1847172735238000, guid: f3daf336c815d924dabf4b7d2c68c52b, type: 2}
       propertyPath: m_IsActive
@@ -1787,6 +1787,41 @@ Prefab:
       value: 
       objectReference: {fileID: 1773677217592262, guid: dc401f2efc8dd234caeb818d447a7ee9,
         type: 2}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 812.02515
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 484.70096
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 219.55995
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 65366601317074790, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 389.1267
+      objectReference: {fileID: 0}
+    - target: {fileID: 114574425945839806, guid: f3daf336c815d924dabf4b7d2c68c52b,
+        type: 2}
+      propertyPath: AllowMeshVisualizationControl
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f3daf336c815d924dabf4b7d2c68c52b, type: 2}
   m_IsPrefabParent: 0
