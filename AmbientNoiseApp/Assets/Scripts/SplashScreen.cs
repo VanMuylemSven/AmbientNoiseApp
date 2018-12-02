@@ -27,7 +27,7 @@ public class SplashScreen : MonoBehaviour {
         var color = ObjectToFade.GetComponent<Image>().color;
         while (color.a > 0.0f)
         {
-            color.a -= Time.deltaTime / 5;
+            color.a -= Time.deltaTime / SecondsToWaitForLoading;
             ObjectToFade.GetComponent<Image>().color = color;
             yield return null;
         }
