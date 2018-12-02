@@ -27,7 +27,7 @@ public class SplashScreen : MonoBehaviour {
         var color = ObjectToFade.GetComponent<Image>().color;
         while (color.a > 0.0f)
         {
-            color.a -= Time.deltaTime / 4;
+            color.a -= Time.deltaTime / 5;
             ObjectToFade.GetComponent<Image>().color = color;
             yield return null;
         }
@@ -40,8 +40,9 @@ public class SplashScreen : MonoBehaviour {
         yield return new WaitForSeconds(SecondsToWaitForLoading);
         Debug.Log("Fading");
         var color = ObjectToFade.GetComponent<Image>().color;
-        while(ObjectToFade.GetComponent<Image>().color.a < 1.0f)
+        while(ObjectToFade.GetComponent<Image>().color.a < 1.0f) //Start fading to black
         {
+            StartCoroutine(LoadScene()); //Skip fading to black and load while it's full white
             color.a += Time.deltaTime / 4;
             ObjectToFade.GetComponent<Image>().color = color;
             yield return null;
