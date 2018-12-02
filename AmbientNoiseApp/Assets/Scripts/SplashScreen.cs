@@ -12,13 +12,12 @@ public class SplashScreen : MonoBehaviour {
     public int SecondsToWaitForLoading = 5;
 
 	void Start () {
-        StartCoroutine(FadeToBlack());
         StartCoroutine(FadeOut());
     }
 
 
     void Update () {
-        //FadeOut();
+
     }
 
     IEnumerator FadeOut()
@@ -31,32 +30,8 @@ public class SplashScreen : MonoBehaviour {
             ObjectToFade.GetComponent<Image>().color = color;
             yield return null;
         }
-        yield return null;
-        
-    }
-    IEnumerator FadeToBlack()
-    {
-        Debug.Log("Waiting to fade");
-        yield return new WaitForSeconds(SecondsToWaitForLoading);
-        Debug.Log("Fading");
-        var color = ObjectToFade.GetComponent<Image>().color;
-        while(ObjectToFade.GetComponent<Image>().color.a < 1.0f) //Start fading to black
-        {
-            StartCoroutine(LoadScene()); //Skip fading to black and load while it's full white
-            color.a += Time.deltaTime / 4;
-            ObjectToFade.GetComponent<Image>().color = color;
-            yield return null;
-            //Debug.Log("1");
-
-        }
-        yield return null;
-        StartCoroutine(LoadScene());
-
-
-    }
-    IEnumerator LoadScene()
-    {
         SceneManager.LoadScene(SceneNameToLoad);
         yield return null;
+        
     }
 }
